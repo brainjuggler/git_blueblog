@@ -1,0 +1,74 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 全体設定 */
+ul{
+    list-style:none;
+}
+
+/* indexの編集 */
+.list_article{
+    width: 500px;
+    margin: 50px auto;
+}
+.article_set{
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2)
+}
+.article_post img{
+    margin: 20px auto;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(41,41,41,0.2);
+}
+.article_set li p i{
+    margin-right: 5px;
+    color: #aaaaaa;
+    font-size: 20px;
+}
+/* indexの編集と削除を横並びにする方法 */
+.edit_tag ul{
+    margin: 0;
+    padding: 0;
+}
+.edit_tag li a{
+    display: block;
+    padding: 5px;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: 0px;
+}
+.edit_tag li a:hover{
+    background-color: #eeeeee;
+}
+.edit_tag ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.edit_tag li{
+    float: left;
+    width: auto;
+}
+
+
+/* 投稿ページの編集 */
+.contents_row{
+    margin-top: 40px;
+}
+
+.contents_row a{
+    float: right;
+}
+
+.field{
+    width: 500px;
+    margin: auto;
+}

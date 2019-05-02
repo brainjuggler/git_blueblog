@@ -1,0 +1,29 @@
+<div class ="contents_row">
+    <a href="/">一覧に戻る</a>
+   <div class="field">
+
+    <%= form_for @article, url: complete_path  do |f| %>
+         
+         <p><%= f.text_field :title, :placeholder =>"タイトル" %></p>
+         
+         <p><%= f.file_field :image, :placeholder =>"ファイルを選択して下さい" %></p>
+         
+         <p><%= f.text_area :content, :placeholder =>"コメントを書いて下さい",size: "50x8" %></p>
+         <p><%= f.submit "送信" %></p>
+    <% end %>
+   </div>
+</div>     
+    <!--%= form_tag('/complete', method: :post) do %>-->
+    <!-- <h3>-->
+    <!--     投稿する-->
+    <!-- </h3>-->
+    <!-- <p><input type="text" name="title" placeholder="タイトル"></p>-->
+    <!-- <p><input type="text" name="image" placeholder="Image Url"></p>-->
+    <!-- <textarea name="content" placeholder="記事を書いてください" rows="13" cols="50"></textarea>-->
+     
+    <!-- <p><input type="submit" value="投稿"></p>-->
+     
+     
+     
+    <!--% end %>-->
+<!--</div>-->
